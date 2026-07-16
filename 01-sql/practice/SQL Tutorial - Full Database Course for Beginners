@@ -1,0 +1,22 @@
+notes and qurries for this video https://www.youtube.com/watch?v=HXV3zeQKqGY
+
+*notes*
+
+*Qurries*
+
+Drop table student;
+
+create table student (
+  sudent_id int auto_increment,
+  name varchar (20),
+  major varchar (20) default 'undecied',
+  primary key (sudent_id)
+);
+
+select * from student;
+
+insert into student (name, major) values ('Jack', 'Bio');
+insert into student (name) values ('Kate');
+insert into student (name, major) values ('Mike', 'Comp Sci');
+insert into student (name, major) values ('Jack', 'Bio');
+insert into student (name, major) values ('Aven', 'Comp Sci');
