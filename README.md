@@ -47,6 +47,23 @@ SAP ERP, SAP S/4HANA, SAP EWM, and other SAP-related learning and projects.
 
 ---
 
+## 🚀 Professional Development
+
+### 📖 Currently Learning
+
+- 🔄 freeCodeCamp Relational Databases Certification (10/63)
+- 🔄 IT Fundamentals — Udemy (83/181)
+
+### 🏆 Completed Training
+
+- ✅ Computer Hardware Basics — Cisco (May 2024)
+- ✅ SAP Extended Warehouse Management (SAP EWM) Essentials — Udemy (June 2026)
+- ✅ The Ultimate SAP S/4HANA Course 2026: From Zero to Expert — Udemy (June 2026)
+- ✅ SAP S/4HANA Cloud Public Edition — Udemy (June 2026)
+- ✅ Six Sigma White Belt – Information Technology — Educate 360 (June 2026)
+
+---
+
 ## 🛠️ Technologies
 
 - SQL
@@ -65,6 +82,7 @@ SAP ERP, SAP S/4HANA, SAP EWM, and other SAP-related learning and projects.
 This repository is designed to grow as I learn.
 
 You'll find:
+
 - Practice exercises
 - Mini projects
 - Course projects
@@ -78,9 +96,5 @@ Every folder represents another step in my learning journey.
 
 ## 🤝 Connect With Me
 
-💼 LinkedIn:  
+💼 **LinkedIn:**  
 https://www.linkedin.com/in/avenm396/
-
----
-
-*"The best way to learn is by building."*
