@@ -1,0 +1,466 @@
+# Bash Basics (freeCodeCamp)
+
+These notes cover the fundamental Bash commands and concepts learned while working through the freeCodeCamp Relational Databases Certification.
+
+---
+
+# Terminal
+
+The terminal is a command-line interface (CLI) used to interact with the operating system by typing commands.
+
+## Opening the Terminal (GitHub Codespaces)
+
+1. Click the **☰ (Hamburger Menu)**.
+2. Select **Terminal**.
+3. Click **New Terminal**.
+
+---
+
+# Common Commands
+
+## `echo`
+
+Displays text in the terminal.
+
+```bash
+echo hello terminal
+```
+
+**Output**
+
+```text
+hello terminal
+```
+
+---
+
+## `pwd`
+
+**Print Working Directory**
+
+Displays the full path of the directory you are currently in.
+
+```bash
+pwd
+```
+
+Example:
+
+```text
+/workspaces/project
+```
+
+---
+
+## `ls`
+
+**List**
+
+Displays the files and folders in the current directory.
+
+```bash
+ls
+```
+
+Example:
+
+```text
+README.md
+freeCodeCamp
+script.sh
+```
+
+### `ls -l`
+
+Lists files and directories in **long list format**, showing additional information such as:
+
+- File type
+- File permissions
+- Number of links
+- Owner
+- Group
+- File size
+- Last modified date and time
+- File or directory name
+
+```bash
+ls -l
+```
+
+Example:
+
+```text
+drwxr-xr-x  has
+-rw-r--r-- package.json
+```
+
+- `d` indicates a **directory**
+- `-` indicates a **file**
+
+### `ls --help`
+
+Displays the help menu for the `ls` command.
+
+```bash
+ls --help
+```
+
+The help menu explains:
+
+- What the command does
+- Available flags
+- Command syntax
+- Usage examples
+
+> **Tip:** Many Linux commands support the `--help` flag.
+
+Example:
+
+```bash
+command --help
+```
+
+---
+
+## `cd`
+
+**Change Directory**
+
+Moves from the current directory into another directory.
+
+```bash
+cd <folder_name>
+```
+
+Example:
+
+```bash
+cd freeCodeCamp
+```
+
+### `cd ..`
+
+Moves up one directory level.
+
+```bash
+cd ..
+```
+
+### `cd ../..`
+
+Moves up two directory levels.
+
+```bash
+cd ../..
+```
+
+Example:
+
+Current directory:
+
+```text
+/workspaces/project/node_modules/has
+```
+
+Command:
+
+```bash
+cd ../..
+```
+
+New directory:
+
+```text
+/workspaces/project
+```
+
+> **Note:** `..` always represents the **parent directory**. Every additional `../` moves you up one more directory level.
+
+Examples:
+
+```bash
+cd ..
+```
+
+⬆️ Up one level
+
+```bash
+cd ../..
+```
+
+⬆️⬆️ Up two levels
+
+```bash
+cd ../../..
+```
+
+⬆️⬆️⬆️ Up three levels
+
+---
+
+## `mkdir`
+
+**Make Directory**
+
+Creates a new directory (folder).
+
+```bash
+mkdir <folder_name>
+```
+
+Example:
+
+```bash
+mkdir website
+```
+
+This creates a new folder named `website`.
+
+> **Note:** A **directory** and a **folder** are the same thing.
+
+---
+
+## `touch`
+
+Creates a new empty file.
+
+```bash
+touch <filename>
+```
+
+Example:
+
+```bash
+touch index.html
+```
+
+This creates an empty file named `index.html`.
+
+You can also create multiple files at once.
+
+Example:
+
+```bash
+touch index.html styles.css script.js
+```
+
+---
+
+## `more`
+
+Displays the contents of a file one screen at a time.
+
+```bash
+more package.json
+```
+
+---
+
+## `clear`
+
+Clears the terminal screen.
+
+```bash
+clear
+```
+
+---
+
+# Working with Directories
+
+After using `cd`, the terminal prompt changes to show your current directory.
+
+Use `pwd` to display the full path.
+
+```bash
+pwd
+```
+
+Example:
+
+```text
+/workspaces/project/freeCodeCamp
+```
+
+Use `ls` to display the contents of the current directory.
+
+```bash
+ls
+```
+
+Example:
+
+```text
+README.md
+notes.txt
+script.sh
+```
+
+Folders are typically displayed in a different color than files.
+
+Files usually include a file extension, such as:
+
+```text
+README.md
+package.json
+script.sh
+```
+
+Directories generally do not have file extensions.
+
+---
+
+# Creating Files and Directories
+
+A common workflow for starting a website project is:
+
+```bash
+mkdir website
+cd website
+touch index.html
+```
+
+This will:
+
+1. Create a folder named `website`
+2. Move into the folder
+3. Create an empty `index.html` file
+
+---
+
+# Hidden Files
+
+Some files are **hidden** by default because their names begin with a period (`.`).
+
+Example:
+
+```text
+.gitignore
+```
+
+Hidden files often store configuration or settings for programs.
+
+By default, `ls` does **not** display hidden files.
+
+---
+
+# Command Flags
+
+A **flag** modifies how a command behaves.
+
+Flags are usually added after a command using a hyphen (`-`).
+
+Examples:
+
+```bash
+ls -l
+```
+
+```bash
+ls --help
+```
+
+Many Linux commands support flags to change their behavior or display additional information.
+
+---
+
+# Key Concepts
+
+## Terminal
+
+A program that allows you to interact with the operating system using text commands.
+
+## Command Line Interface (CLI)
+
+A text-based interface used to run commands.
+
+## Directory
+
+Another name for a folder.
+
+## Parent Directory
+
+The directory one level above your current location.
+
+## Working Directory
+
+The directory you are currently using.
+
+## Path
+
+The complete location of a file or directory within the file system.
+
+## Prompt
+
+The text shown before your cursor that indicates the current directory and is ready to accept commands.
+
+## File
+
+A document or piece of data stored on your computer.
+
+## File Extension
+
+The letters after a period in a filename that identify the file type.
+
+Examples:
+
+```text
+README.md
+package.json
+script.sh
+```
+
+## Hidden File
+
+A file whose name begins with a period (`.`), making it hidden from normal directory listings.
+
+Example:
+
+```text
+.gitignore
+```
+
+## Command Flag
+
+An option added to a command that changes how the command works.
+
+Examples:
+
+```bash
+ls -l
+```
+
+```bash
+ls --help
+```
+
+## HTML
+
+**HyperText Markup Language**
+
+The standard language used to create web pages.
+
+The main page of a website is commonly named:
+
+```text
+index.html
+```
+
+---
+
+# Commands Learned
+
+| Command | Description |
+|----------|-------------|
+| `echo` | Display text in the terminal |
+| `pwd` | Print the current working directory |
+| `ls` | List files and folders |
+| `ls -l` | List files and folders in long list format |
+| `ls --help` | Display help information for the `ls` command |
+| `cd` | Change directories |
+| `cd ..` | Move to the parent directory |
+| `cd ../..` | Move up two directory levels |
+| `mkdir` | Create a new directory |
+| `touch` | Create a new empty file |
+| `more` | Display the contents of a file |
+| `clear` | Clear the terminal screen |
